@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--상단바-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageButton
+            android:id="@+id/categoryButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/category_icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/cartButton"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/cart" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center">
+
+        <!--광고이미지 띄우는 부분, ViewPager2 사용, 이미지 슬라이더-->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/adViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#FFF2CC"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:scaleType="fitXY" />
+
+        <!--이미지를 넘길 때 이미지의 위치를 표시하는 효과-->
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="> 배달 주문"
+                android:textColor="@color/black"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/gridViewFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F6F5F6"
+                android:gravity="center"
+                android:numColumns="3"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="오늘도 맛있는 하루 되세요 :)"
+                android:textColor="#FFAC07"
+                android:textSize="12pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="# 배달의 숙명"
+                android:textSize="7pt" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

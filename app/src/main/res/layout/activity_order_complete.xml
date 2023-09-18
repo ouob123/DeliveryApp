@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderCompleteActivity">
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:textSize="11pt"
+        android:textColor="#878282"
+        android:text="X" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:srcCompat="@drawable/complete_order_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="9pt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="배달정보" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#5C5C5C"
+        android:textStyle="bold"
+        android:text="배달주소" />
+
+    <TextView
+        android:id="@+id/requestText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#858484"
+        android:textStyle="bold"
+        android:text="일회용품 요청사항" />
+
+    <TextView
+        android:id="@+id/requestText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#858484"
+        android:textStyle="bold"
+        android:text="요청사항" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="9pt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="주문정보" />
+
+    <TextView
+        android:id="@+id/phoneNumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#858484"
+        android:textStyle="bold"
+        android:text="고객 전화번호" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#858484"
+        android:textStyle="bold"
+        android:text="총 금액" />
+
+    <TextView
+        android:id="@+id/paymentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#858484"
+        android:textStyle="bold"
+        android:text="결제방법" />
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="#322600"
+        android:text="고객님께서 드시는 음식, 정성을 다해 조리하겠습니다" />
+
+</LinearLayout>

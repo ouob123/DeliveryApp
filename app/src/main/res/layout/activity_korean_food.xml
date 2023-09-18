@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KoreanFoodActivity">
+
+    <!--상단바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:text="싸움의 고수"
+            android:textColor="@color/black"
+            android:textSize="11pt"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/home_button" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E3E2E2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewBannerStore"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/store1_logo" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/stars_five" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12pt"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="4.8" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="9pt"
+                    android:textStyle="bold"
+                    android:text="결제방법      바로결제, 만나서 결제\n배달팁          3000원" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E3E2E2"/>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/menu_logo" />
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="400dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/menu_line" />
+
+            <!--메뉴1-->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/krfood1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/store1_menu1"/>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#FFEB3B"
+                    android:textColor="#322600"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    android:text="1인 보쌈" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:textColor="#636362"
+                    android:textSize="9pt"
+                    android:text="9,700원" />
+
+            </LinearLayout>
+
+            <!--메뉴2-->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/krfood2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/store1_menu2"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#FFEB3B"
+                    android:textColor="#322600"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    android:text="마늘 보쌈" />
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:textColor="#636362"
+                    android:textSize="9pt"
+                    android:text="10,700원" />
+
+            </LinearLayout>
+
+            <!--메뉴3-->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/krfood3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/store1_menu3"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#FFEB3B"
+                    android:textColor="#322600"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    android:text="간장 보쌈" />
+
+                <TextView
+                    android:id="@+id/price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:textColor="#636362"
+                    android:textSize="9pt"
+                    android:text="10,700원" />
+
+            </LinearLayout>
+
+            <!--메뉴4-->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/krfood4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/store1_menu4"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#FFEB3B"
+                    android:textColor="#322600"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    android:text="불 족발" />
+
+               <TextView
+                    android:id="@+id/price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                   android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:textColor="#636362"
+                    android:textSize="9pt"
+                    android:text="11,100원" />
+
+            </LinearLayout>
+
+            <!--장바구니-->
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textColor="#FFB700"
+                android:text="> 장바구니" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="#F6F0B9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/orderProduct"
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="4dp"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="#322600"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/listView"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:backgroundTint="#FF9800"
+                android:text="주문하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

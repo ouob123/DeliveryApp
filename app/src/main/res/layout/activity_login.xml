@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="17pt"
+        android:textColor="#322600"
+        android:textStyle="bold"
+        android:text="환영합니다" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/icon_logo" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#FFF2CC"
+        android:padding="7dp"
+        android:textSize="10pt"
+        android:hint=" 아이디 (닉네임)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFF2CC"
+        android:padding="7dp"
+        android:textSize="10pt"
+        android:hint=" 배달받을 주소(도로명)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTel"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FFF2CC"
+        android:padding="7dp"
+        android:textSize="10pt"
+        android:hint=" 000-0000-0000"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFC000"
+            android:textColor="#7F6000"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:text="시작하기" />
+
+    </LinearLayout>
+
+</LinearLayout>
